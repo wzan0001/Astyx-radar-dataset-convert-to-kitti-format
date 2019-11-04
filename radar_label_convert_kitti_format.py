@@ -97,7 +97,10 @@ def label_convert(save_dir,read_dir,calib_dir):
 
                     obj=oo#dict
                     anotation=[]
-                    anotation.append(obj['classname'])
+                    if obj['classname']=='Other Vehicle':
+                        anotation.append('Other_Vehicle')
+                    else:
+                        anotation.append(obj['classname'])
                     anotation.append('0')#truncated unused
                     anotation.append(str(obj['occlusion']))
                     anotation.append('-10')#alpha unused
