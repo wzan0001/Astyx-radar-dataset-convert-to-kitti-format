@@ -27,3 +27,8 @@ run the demo.py
 python demo.py
 ```
 the result will find in root_dir, 'kitti_format_label' and 'kitti_format_calib'
+
+The 'Tr_velo_to_cam' in calib file is transform matrix of radar to camera, not lidar to camera!!
+
+## References
+"Automotive Radar Dataset for Deep Learning Based 3D Object Detection"; Meyer, Michael and Kuschk, Georg; European Radar Conference 2019
