@@ -2,7 +2,6 @@ import os
 import csv
 import numpy as np
 
-
 class FrameCalibrationData:
     def __init__(self):
         self.p0 = []
@@ -11,8 +10,6 @@ class FrameCalibrationData:
         self.p3 = []
         self.r0_rect = []
         self.tr_velodyne_to_cam = []
-
-
 
 def read_calibration(calib_dir, img_idx):
     """Reads in Calibration file from Dataset.
@@ -53,9 +50,7 @@ def read_calibration(calib_dir, img_idx):
     tr_v2c = tr_v2c[1:]
     tr_v2c = [float(tr_v2c[i]) for i in range(len(tr_v2c))]
     frame_calibration_info.tr_velodyne_to_cam = np.reshape(tr_v2c, (3, 4))
-
     return frame_calibration_info
-
 
 def radar_to_cam_frame(xyz_radar, frame_calib):
     """Transforms the points to the camera frame.
