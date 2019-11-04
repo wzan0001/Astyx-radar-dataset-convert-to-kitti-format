@@ -30,7 +30,7 @@ the result will find in root_dir, 'kitti_format_label' and 'kitti_format_calib'
 
 The 'Tr_velo_to_cam' in calib file is transform matrix of radar to camera, not lidar to camera!!
 
-## Label project to image
+## Labels show in image
 ![teaser](https://github.com/wzan0001/Astyx-radar-dataset-convert-to-kitti-format/blob/master/3.jpg)
 
 ## References
