@@ -20,7 +20,7 @@ dataset_astyx_hires2019
 ```
 Add the root path of dataset in demo.py：
 ```bash
-root_dir=' your_path /dataset_astyx_hires2019/dataset_astyx_hires2019/'
+root_dir=' 'your_path' /dataset_astyx_hires2019/dataset_astyx_hires2019/'
 ```
 run the demo.py
 ```bash
